@@ -49,72 +49,113 @@ header {
 
                 .dropwrapper {
                     position: relative;
+                    transition: 0.3s;
+
+                    &:hover {
+                        .dropdown {
+                            display: flex;
+                            opacity: 1;
+                        }
+                    }
 
                     .dropdown {
+                        opacity: 0;
+                        display: none;
                         position: absolute;
+                        top: 47px;
+                        border: 1px solid rgb(122, 122, 122);
+                        left: 0;
 
                         ul {
-                            width: 130px;
-                            background-color: teal;
-                            padding: 0;
+                            background-color: #fff;
+                            padding: 10px;
+
+                            h5 {
+                                font-size: 15px;
+                                font-weight: 500;
+                                color: rgb(34, 34, 34);
+                            }
+
+
+                            li {
+                                width: 199px;
+                                font-weight: 400;
+                                padding: 0 !important;
+                                line-height: 26px;
+                            }
+
+
+
+                            hr {
+                                height: 1px;
+                                background: rgb(122, 122, 122);
+                                background: linear-gradient(0deg, rgba(122, 122, 122, 0) 100%, rgba(255, 53, 237, 1) 100%);
+                            }
+
+                            a {
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: rgb(102, 102, 102);
+                            }
                         }
                     }
                 }
             }
+        }
 
 
-            .iconswrapper {
-                display: flex;
-                font-size: 22px;
-                gap: 14px;
-                color: #ffffff;
-                align-items: center;
-                text-align: right;
-                justify-content: flex-end;
-                padding: 0 15px;
+        .iconswrapper {
+            display: flex;
+            font-size: 22px;
+            gap: 14px;
+            color: #ffffff;
+            align-items: center;
+            text-align: right;
+            justify-content: flex-end;
+            padding: 0 15px;
 
-                .account {
-                    font-size: 30px;
-                }
-
-                .basket {
-                    font-size: 25px;
-                    position: relative;
-
-
-                }
-
-                .basket::after {
-                    content: '0';
-                    position: absolute;
-                    background-color: red;
-                    font-size: 10px;
-                    padding: 0 4px;
-                    border-radius: 50%;
-                    top: -5px;
-                    right: -2px;
-                }
-
-                i {
-                    cursor: pointer;
-                }
+            .account {
+                font-size: 30px;
             }
 
-            a {
-                color: #fff;
-                transition: 0.4s;
+            .basket {
+                font-size: 25px;
+                position: relative;
 
-                &:hover {
-                    color: black;
-                }
+
+            }
+
+            .basket::after {
+                content: '0';
+                position: absolute;
+                background-color: red;
+                font-size: 10px;
+                padding: 0 4px;
+                border-radius: 50%;
+                top: -5px;
+                right: -2px;
+            }
+
+            i {
+                cursor: pointer;
             }
         }
 
+        a {
+            color: #fff;
+            transition: 0.4s;
+
+            &:hover {
+                color: black;
+            }
+        }
     }
 
-
-
 }
+
+
+
+
 
 @media screen and(max-width:992px) {
     header {

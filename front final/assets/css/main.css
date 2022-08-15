@@ -60,19 +60,58 @@ header .container .row .menu li {
 
 header .container .row .menu .dropwrapper {
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .container .row .menu .dropwrapper:hover .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
 }
 
 header .container .row .menu .dropwrapper .dropdown {
+  opacity: 0;
+  display: none;
   position: absolute;
+  top: 47px;
+  border: 1px solid #7a7a7a;
+  left: 0;
 }
 
 header .container .row .menu .dropwrapper .dropdown ul {
-  width: 130px;
-  background-color: teal;
-  padding: 0;
+  background-color: #fff;
+  padding: 10px;
 }
 
-header .container .row .iconswrapper {
+header .container .row .menu .dropwrapper .dropdown ul h5 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #222222;
+}
+
+header .container .row .menu .dropwrapper .dropdown ul li {
+  width: 199px;
+  font-weight: 400;
+  padding: 0 !important;
+  line-height: 26px;
+}
+
+header .container .row .menu .dropwrapper .dropdown ul hr {
+  height: 1px;
+  background: #7a7a7a;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, rgba(122, 122, 122, 0)), to(#ff35ed));
+  background: linear-gradient(0deg, rgba(122, 122, 122, 0) 100%, #ff35ed 100%);
+}
+
+header .container .row .menu .dropwrapper .dropdown ul a {
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+}
+
+header .container .iconswrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,16 +128,16 @@ header .container .row .iconswrapper {
   padding: 0 15px;
 }
 
-header .container .row .iconswrapper .account {
+header .container .iconswrapper .account {
   font-size: 30px;
 }
 
-header .container .row .iconswrapper .basket {
+header .container .iconswrapper .basket {
   font-size: 25px;
   position: relative;
 }
 
-header .container .row .iconswrapper .basket::after {
+header .container .iconswrapper .basket::after {
   content: '0';
   position: absolute;
   background-color: red;
@@ -109,17 +148,17 @@ header .container .row .iconswrapper .basket::after {
   right: -2px;
 }
 
-header .container .row .iconswrapper i {
+header .container .iconswrapper i {
   cursor: pointer;
 }
 
-header .container .row a {
+header .container a {
   color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-header .container .row a:hover {
+header .container a:hover {
   color: black;
 }
 
