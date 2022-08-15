@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .container .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: aqua;
+}
+
+header .container .row .desktop-logo {
+  text-align: center;
+  margin: 0 auto;
+}
+
+header .container .row .menuwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .row .menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 15px;
+  padding: 0 !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+header .container .row .menu li {
+  padding: 15px 10px;
+}
+
+header .container .row .menu .dropwrapper {
+  position: relative;
+}
+
+header .container .row .menu .dropwrapper .dropdown {
+  position: absolute;
+}
+
+header .container .row .menu .dropwrapper .dropdown ul {
+  width: 130px;
+  background-color: teal;
+  padding: 0;
+}
+
+header .container .row .iconswrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 22px;
+  gap: 14px;
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 15px;
+}
+
+header .container .row .iconswrapper .account {
+  font-size: 30px;
+}
+
+header .container .row .iconswrapper .basket {
+  font-size: 25px;
+  position: relative;
+}
+
+header .container .row .iconswrapper .basket::after {
+  content: '0';
+  position: absolute;
+  background-color: red;
+  font-size: 10px;
+  padding: 0 4px;
+  border-radius: 50%;
+  top: -5px;
+  right: -2px;
+}
+
+header .container .row .iconswrapper i {
+  cursor: pointer;
+}
+
+header .container .row a {
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .container .row a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 992px) {
+  header .row {
+    background-color: white;
+  }
+  header .icons .iconswrapper {
+    color: black !important;
+  }
+  header .hamburger-search {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    font-size: 22px;
+    color: black;
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hamburger-search .search {
+    margin-top: 2px;
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

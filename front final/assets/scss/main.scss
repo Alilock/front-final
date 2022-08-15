@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #7a7a7a;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+}
+
+header {
+    padding: 20px 0;
+
+    .container {
+        .row {
+            align-items: center;
+
+            background-color: aqua;
+
+            .desktop-logo {
+                text-align: center;
+                margin: 0 auto;
+            }
+
+
+            .menuwrapper {
+                display: flex;
+                align-items: center;
+            }
+
+            .menu {
+                display: inline-flex;
+                font-size: 15px;
+                padding: 0 !important;
+                align-items: center;
+                margin: 0 auto;
+
+                li {
+                    padding: 15px 10px;
+                }
+
+                .dropwrapper {
+                    position: relative;
+
+                    .dropdown {
+                        position: absolute;
+
+                        ul {
+                            width: 130px;
+                            background-color: teal;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+
+            .iconswrapper {
+                display: flex;
+                font-size: 22px;
+                gap: 14px;
+                color: #ffffff;
+                align-items: center;
+                text-align: right;
+                justify-content: flex-end;
+                padding: 0 15px;
+
+                .account {
+                    font-size: 30px;
+                }
+
+                .basket {
+                    font-size: 25px;
+                    position: relative;
+
+
+                }
+
+                .basket::after {
+                    content: '0';
+                    position: absolute;
+                    background-color: red;
+                    font-size: 10px;
+                    padding: 0 4px;
+                    border-radius: 50%;
+                    top: -5px;
+                    right: -2px;
+                }
+
+                i {
+                    cursor: pointer;
+                }
+            }
+
+            a {
+                color: #fff;
+                transition: 0.4s;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+
+    }
+
+
+
+}
+
+@media screen and(max-width:992px) {
+    header {
+
+        .row {
+            background-color: white;
+        }
+
+        .icons {
+            .iconswrapper {
+                color: black !important;
+
+            }
+        }
+
+        .hamburger-search {
+            display: flex !important;
+            font-size: 22px;
+            color: black;
+            gap: 10px;
+            align-items: center;
+
+            .search {
+                margin-top: 2px;
+                font-size: 18px;
+            }
+        }
+
+
+    }
+}
