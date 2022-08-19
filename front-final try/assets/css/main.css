@@ -16,7 +16,6 @@ body {
   -webkit-font-smoothing: antialiased;
   line-height: 18px;
   letter-spacing: 0.5px;
-  height: 600vh;
 }
 
 header {
@@ -200,6 +199,19 @@ header .row .login-basket .bi-person {
 
 header .row .login-basket .bi-handbag {
   font-size: 24px;
+  position: relative;
+}
+
+header .row .login-basket .bi-handbag span {
+  font-style: normal;
+  position: absolute;
+  top: 0;
+  right: -8px;
+  font-size: 13px;
+  padding: 0px 5px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
 }
 
 header .row .login-basket .register {
@@ -868,6 +880,350 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   font-size: 17px;
 }
 
+.FAQs {
+  padding: 70px 0;
+  background-color: #f2f6f9;
+  margin-bottom: 25px;
+}
+
+.FAQs .container .FAQs-header {
+  text-align: center;
+}
+
+.FAQs .container .FAQs-header .subtitle {
+  color: #eb4d4b;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.FAQs .container .FAQs-header .home-title {
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.FAQs .container .FAQs-header .home-title::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.FAQs .container .accordion {
+  background-color: #f2f6f9 !important;
+}
+
+.FAQs .container .accordion .accordion-item {
+  outline: 0 !important;
+  background-color: transparent !important;
+}
+
+.FAQs .container .accordion .accordion-item .accordion-button {
+  background-color: transparent;
+}
+
+.FAQs .container .accordion .accordion-item button h4 {
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  letter-spacing: 0.2px;
+  display: inline-block;
+  color: #222;
+  font-size: 14px;
+}
+
+.FAQs .container .accordion .accordion-item .accordion-body {
+  color: #888;
+  line-height: 24px;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.high-brands {
+  margin-bottom: 30px;
+}
+
+.high-brands #owl-five .owl-dots {
+  display: none;
+}
+
+.high-brands #owl-five .owl-nav button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  border: 1px solid #eb4d4b;
+  background: #eb4d4b;
+  text-align: center;
+  position: relative;
+  margin: 4px;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.high-brands #owl-five .owl-nav button span {
+  font-size: 20px;
+  color: white;
+}
+
+.footer-before {
+  padding: 40px 0 35px;
+  background: #f2f6f9;
+}
+
+.footer-before .container .row .my__card {
+  border: 1px solid rgba(102, 102, 102, 0.15);
+  margin-bottom: 40px;
+  padding: 25px 15px;
+}
+
+.footer-before .container .row .my__card__second {
+  padding: 40px 15px;
+}
+
+.footer-before .container .row .section-header {
+  text-align: center;
+}
+
+.footer-before .container .row .section-header .subtitle {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #eb4d4b;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.footer-before .container .row .section-header .home-title {
+  letter-spacing: 0;
+  font-weight: 600;
+  color: #222;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+.footer-before .container .row .section-header .home-title::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-before .container .row .section-header .bi-newspaper {
+  display: block;
+  font-size: 40px;
+  color: #eb4d4b;
+}
+
+.footer-before .container .row .section-header .second-title {
+  padding: 0;
+  margin-bottom: 13px;
+}
+
+.footer-before .container .row .section-header .second-title::before {
+  display: none;
+}
+
+.footer-before .container .row .input-group {
+  padding: 20px 0;
+}
+
+.footer-before .container .row .input-group input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px !important;
+  border: 1px solid #e5e5e5;
+  padding: 10px 15px;
+  padding-right: 135px;
+  background: #fff;
+  color: #666;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.footer-before .container .row .input-group button {
+  height: 50px;
+  background-color: #eb4d4b;
+  fill: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 30px;
+  padding: 13px 25px;
+  color: #fff;
+  border: 0;
+  float: right;
+  text-transform: uppercase;
+  right: 0;
+  left: auto;
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+}
+
+.footer-before .container .row form {
+  overflow: hidden;
+  text-align: center;
+}
+
+.footer-before .container .row form input {
+  height: 45px;
+  border-radius: 15px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.42857;
+  color: #555;
+  border-color: #e9e9e9;
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+
+.footer-before .container .row form textarea {
+  border-radius: 15px;
+  height: 140px;
+  padding: 12px 12px 0;
+  margin-bottom: 15px;
+}
+
+.footer-before .container .row .buttons {
+  border-radius: 30px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 20px;
+  background: #eb4d4b;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-before .container .row .buttons span {
+  margin-bottom: 0;
+}
+
+.footer-before .container .row .social-group-container .icons {
+  text-align: center;
+  padding: 0;
+}
+
+.footer-before .container .row .social-group-container .icons .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  padding: 3px;
+  margin: 1px 1px;
+  text-align: center;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-before .container .row .social-group-container .icons .icon a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.footer-before .container .row .social-group-container .icons .icon a i {
+  margin: 0 auto;
+}
+
+footer .container .footer-block ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container .footer-block ul .last::before {
+  content: none;
+}
+
+footer .container .footer-block ul li {
+  position: relative;
+  padding: 0 8px;
+  display: inline-block;
+  margin: 0;
+}
+
+footer .container .footer-block ul li::before {
+  position: absolute;
+  content: "";
+  left: auto;
+  right: 0px;
+  background: rgba(102, 102, 102, 0.2);
+  width: 1px;
+  height: 15px;
+  top: 0px;
+}
+
+footer .container .footer-block ul li a {
+  color: #666;
+}
+
 @media screen and (min-width: 992px) {
   header {
     height: 88px;
@@ -1090,6 +1446,51 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
     max-width: 100%;
     height: auto;
   }
+  .FAQs {
+    margin-bottom: 60px;
+  }
+  .high-brands {
+    margin-bottom: 70px;
+  }
+  .high-brands .owl-nav {
+    display: none !important;
+  }
+  footer .container .footer-block ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .container .footer-block ul .last::before {
+    content: none;
+  }
+  footer .container .footer-block ul li {
+    position: relative;
+    padding: 0 8px;
+    display: inline-block;
+    margin: 0;
+  }
+  footer .container .footer-block ul li::before {
+    position: absolute;
+    content: "";
+    left: auto;
+    right: 0px;
+    background: rgba(102, 102, 102, 0.2);
+    width: 1px;
+    height: 15px;
+    top: 0px;
+  }
+  footer .container .footer-block ul li a {
+    color: #666;
+    font-size: 20px;
+    line-height: 27px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1197,6 +1598,34 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   }
   .productsblock .tab-content .my__item .my__card:hover button {
     opacity: 1;
+  }
+  .FAQs .FAQs-header .subtitle {
+    font-size: 16px !important;
+    letter-spacing: 8px !important;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #eb4d4b;
+  }
+  .FAQs .FAQs-header .home-title {
+    font-size: 26px !important;
+    line-height: 26px;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
+  }
+  .FAQs .accordion h4 {
+    font-size: 18px !important;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0;
+    letter-spacing: 0.2px;
+    display: inline-block;
+    color: #222;
   }
 }
 /*# sourceMappingURL=main.css.map */

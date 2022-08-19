@@ -38,3 +38,32 @@ document.addEventListener('scroll', function () {
 
     }
 })
+let addBtns = document.querySelectorAll('.productsblock .my__card__title button')
+function SetId() {
+    let id = 0;
+    addBtns.forEach((addBtn) => {
+        id++
+        addBtn.parentElement.setAttribute("id", id);
+    })
+}
+SetId();
+let basket = [];
+addBtns.forEach((addBtn) => {
+    addBtn.addEventListener('click', function () {
+        let productName = addBtn.previousElementSibling.previousElementSibling.firstChild.innerText;
+        let productPrice = addBtn.previousElementSibling.innerText.slice(1);
+        let productImage = addBtn.parentElement.parentElement.firstElementChild.firstElementChild.src;
+        let productId = addBtn.parentElement.getAttribute('id');
+        console.log(productId);
+        let product = {
+            name: productName,
+            price: productPrice,
+            image: productImage,
+            count: 1,
+            id: productId
+        }
+        basket.push(product)
+        localStorage.getItem(basket, JSON.stringify(basket))
+
+    })
+})
