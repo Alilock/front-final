@@ -90,6 +90,7 @@ header {
             align-items: center;
             gap: 10px;
             padding: 5px 6px;
+            color: black;
 
             .bi-list {
                 font-size: 29px;
@@ -101,6 +102,10 @@ header {
 
             .searchwrapper {
                 position: relative;
+
+                .active {
+                    scale: 1 !important;
+                }
 
                 .search {
                     transition: 0.4s;
@@ -160,27 +165,173 @@ header {
                 align-items: center;
                 gap: 10px;
                 padding: 5px 6px;
+                color: black !important;
             }
 
             .bi-person {
                 font-size: 29px;
             }
 
-            .bi-handbag {
-                font-size: 24px;
+            .basket {
                 position: relative;
 
-                span {
-                    font-style: normal;
-                    position: absolute;
-                    top: 0;
-                    right: -8px;
-                    font-size: 13px;
-                    padding: 0px 5px;
-                    background-color: red;
-                    border-radius: 50%;
-                    color: white;
+                .bi-handbag {
+                    font-size: 24px;
+                    position: relative;
+
+                    span {
+                        font-style: normal;
+                        position: absolute;
+                        top: 0;
+                        right: -8px;
+                        font-size: 13px;
+                        padding: 0px 5px;
+                        background-color: red;
+                        border-radius: 50%;
+                        color: white;
+                    }
                 }
+
+                .cardbox {
+                    transition: 0.4s;
+                    position: absolute;
+                    right: 0;
+                    margin-top: 10px;
+                    width: 295px;
+                    background-color: #fff;
+                    padding: 0 15px;
+                    border: 1px solid #e7e7e7;
+                    scale: 0;
+
+                    &__row {
+
+                        margin: 0;
+                        width: 100%;
+                        border-bottom: 1px solid #e3e3e3;
+                        padding: 10px 15px !important;
+
+
+                        &__image {
+                            padding: 0;
+
+
+                            img {
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        &__desc {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            span {
+                                color: #222;
+                                font-weight: 500;
+                            }
+
+                            .price {
+                                font-weight: 400;
+                                margin: 5px 0;
+                                color: #c95149;
+                            }
+
+                            .id {
+                                display: none;
+                            }
+
+                        }
+
+                        &__delete-btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+
+                            span {
+                                padding: 5px;
+                                background: #d1524c;
+                                color: white;
+                                font-weight: bolder;
+                            }
+                        }
+
+
+                    }
+
+                    &__sub-total {
+                        .total {
+                            font-weight: 500;
+                            color: #232323;
+                            font-size: 13px;
+                            line-height: 22px;
+                        }
+
+                        .total-price {
+                            display: flex;
+                            justify-content: end;
+                            font-weight: 400;
+                            color: #7a7a7a;
+                            font-size: 13px;
+                        }
+
+                    }
+
+                    &__btns {
+                        display: flex;
+                        justify-content: center;
+
+                        a {
+                            width: max-content;
+                        }
+
+                        .viewCard {
+                            background-color: #eb4d4b;
+                            border-color: #eb4d4b;
+                            color: #fff;
+                            outline: none;
+                            line-height: 18px;
+                            font-weight: 400;
+                            padding: 10px 20px;
+                            border-radius: 0;
+                            transition: all 0.5s;
+                        }
+
+                        .Checkout {
+                            opacity: 1;
+                            font-size: 14px;
+                            font-weight: 400;
+                            padding: 10px 20px;
+                            text-transform: uppercase;
+                            border-radius: 0;
+                            -webkit-transition: all 0.5s;
+                            -moz-transition: all 0.5s;
+                            -o-transition: all 0.5s;
+                            transition: all 0.5s;
+                            color: #fff;
+                            background-color: #232323;
+                            border: 1px solid #232323;
+                            outline: none;
+                            line-height: 18px;
+                        }
+
+                    }
+                    &__empty{
+                        font-size: 14px;
+                        padding: 10px 0;
+                        line-height: 18px;
+                    }
+                    .active{
+                        display: none !important;
+                    }
+                }
+
+            }
+
+            .active {
+                scale: 1 !important;
+                border: 1px solid rgb(96, 96, 96);
+
             }
 
             .register {
@@ -197,10 +348,8 @@ header {
                     border-radius: 0;
                     padding: 9px 15px;
                     background-color: white;
-                    // border: 1px solid rgb(96, 96, 96);
 
                     ul {
-
                         padding: 0;
                         margin: 0;
 
@@ -1177,7 +1326,8 @@ header {
 
             .social-group {
 
-                // margin-bottom: 15px !important;
+                margin-bottom: 15px !important;
+
                 &-container {
                     .icons {
                         text-align: center;
@@ -1382,6 +1532,16 @@ footer {
                 &:hover {
                     color: red;
                 }
+            }
+
+            .active {
+                scale: 2 !important;
+            }
+
+            .cardbox {
+                width: 340px !important;
+                top: 40px;
+                scale: 0;
             }
         }
 

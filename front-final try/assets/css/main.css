@@ -104,6 +104,7 @@ header .row .menubar {
           align-items: center;
   gap: 10px;
   padding: 5px 6px;
+  color: black;
 }
 
 header .row .menubar .bi-list {
@@ -116,6 +117,10 @@ header .row .menubar .bi-search {
 
 header .row .menubar .searchwrapper {
   position: relative;
+}
+
+header .row .menubar .searchwrapper .active {
+  scale: 1 !important;
 }
 
 header .row .menubar .searchwrapper .search {
@@ -191,18 +196,23 @@ header .row .login-basket .login-basket-wrapper {
           align-items: center;
   gap: 10px;
   padding: 5px 6px;
+  color: black !important;
 }
 
 header .row .login-basket .bi-person {
   font-size: 29px;
 }
 
-header .row .login-basket .bi-handbag {
+header .row .login-basket .basket {
+  position: relative;
+}
+
+header .row .login-basket .basket .bi-handbag {
   font-size: 24px;
   position: relative;
 }
 
-header .row .login-basket .bi-handbag span {
+header .row .login-basket .basket .bi-handbag span {
   font-style: normal;
   position: absolute;
   top: 0;
@@ -212,6 +222,161 @@ header .row .login-basket .bi-handbag span {
   background-color: red;
   border-radius: 50%;
   color: white;
+}
+
+header .row .login-basket .basket .cardbox {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  width: 295px;
+  background-color: #fff;
+  padding: 0 15px;
+  border: 1px solid #e7e7e7;
+  scale: 0;
+}
+
+header .row .login-basket .basket .cardbox__row {
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px 15px !important;
+}
+
+header .row .login-basket .basket .cardbox__row__image {
+  padding: 0;
+}
+
+header .row .login-basket .basket .cardbox__row__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .row .login-basket .basket .cardbox__row__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .row .login-basket .basket .cardbox__row__desc span {
+  color: #222;
+  font-weight: 500;
+}
+
+header .row .login-basket .basket .cardbox__row__desc .price {
+  font-weight: 400;
+  margin: 5px 0;
+  color: #c95149;
+}
+
+header .row .login-basket .basket .cardbox__row__desc .id {
+  display: none;
+}
+
+header .row .login-basket .basket .cardbox__row__delete-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+header .row .login-basket .basket .cardbox__row__delete-btn span {
+  padding: 5px;
+  background: #d1524c;
+  color: white;
+  font-weight: bolder;
+}
+
+header .row .login-basket .basket .cardbox__sub-total .total {
+  font-weight: 500;
+  color: #232323;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+header .row .login-basket .basket .cardbox__sub-total .total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 13px;
+}
+
+header .row .login-basket .basket .cardbox__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .row .login-basket .basket .cardbox__btns a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+header .row .login-basket .basket .cardbox__btns .viewCard {
+  background-color: #eb4d4b;
+  border-color: #eb4d4b;
+  color: #fff;
+  outline: none;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header .row .login-basket .basket .cardbox__btns .Checkout {
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #fff;
+  background-color: #232323;
+  border: 1px solid #232323;
+  outline: none;
+  line-height: 18px;
+}
+
+header .row .login-basket .basket .cardbox__empty {
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 18px;
+}
+
+header .row .login-basket .basket .cardbox .active {
+  display: none !important;
+}
+
+header .row .login-basket .active {
+  scale: 1 !important;
+  border: 1px solid #606060;
 }
 
 header .row .login-basket .register {
@@ -1144,6 +1309,10 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   margin-bottom: 0;
 }
 
+.footer-before .container .row .social-group {
+  margin-bottom: 15px !important;
+}
+
 .footer-before .container .row .social-group-container .icons {
   text-align: center;
   padding: 0;
@@ -1324,6 +1493,14 @@ footer .container .footer-block ul li a {
   }
   header .login-basket-wrapper i:hover {
     color: red;
+  }
+  header .login-basket-wrapper .active {
+    scale: 2 !important;
+  }
+  header .login-basket-wrapper .cardbox {
+    width: 340px !important;
+    top: 40px;
+    scale: 0;
   }
   .headeractive {
     position: fixed;

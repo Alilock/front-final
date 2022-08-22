@@ -116,7 +116,7 @@
                             <i class="bi bi-person"></i>
                             <div class="register-dropdown">
                                 <ul>
-                                    <li><a href="">Register</a></li>
+                                    <li><a href="register.html">Register</a></li>
                                     <li><a href="">Login</a></li>
                                     <li><a href="">Wish List(0)</a></li>
                                     <div class="languageswrapper">
@@ -148,9 +148,34 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <i class="bi bi-handbag">
-                                <span>0</span>
-                            </i>
+                            <div class="basketicon">
+                                <i id="basketbtn" class="bi bi-handbag">
+                                    <span id="basketCount">0</span>
+                                </i>
+                            </div>
+                            <div class="cardbox">
+                                <div class="cardbox__content">
+                                    <div class="cardbox__sub-total row">
+                                        <span class="total col-6">Sub-Total</span>
+                                        <span id="total-price" class="total-price col-6">$0</span>
+                                    </div>
+                                    <div class="cardbox__btns row">
+                                        <a href="">
+                                            <button class="viewCard">VIEW CARD</button>
+                                        </a>
+                                        <a href="">
+                                            <button type="button" class="Checkout">
+                                                Checkout</button>
+                                        </a>
+                                    </div>
+                                </div>
+                               
+                                <div class="cardbox__empty">
+                                    <span>Your shopping card is empty!</span>
+                                </div>
+                            </div>
+
+
 
                         </div>
                     </div>
