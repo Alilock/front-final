@@ -512,12 +512,12 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   position: relative;
 }
 
-.sidebar-register .container .row .sidebar .categories {
+.sidebar-login .container .row .sidebar .categories {
   border: 1px solid #e9e9e9;
   margin-bottom: 30px;
 }
 
-.sidebar-register .container .row .sidebar .categories__title h2 {
+.sidebar-login .container .row .sidebar .categories__title h2 {
   background: #f5f5f5;
   padding: 15px;
   border: medium none;
@@ -528,25 +528,25 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   font-size: 16px;
 }
 
-.sidebar-register .container .row .sidebar .categories__list {
+.sidebar-login .container .row .sidebar .categories__list {
   padding: 0;
   margin: 0;
   background-color: #fff;
 }
 
-.sidebar-register .container .row .sidebar .categories__list a {
+.sidebar-login .container .row .sidebar .categories__list a {
   border: 0;
   color: #232323;
   display: inline-block;
   padding: 10px 15px;
 }
 
-.sidebar-register .container .row .sidebar .bestsellers {
+.sidebar-login .container .row .sidebar .bestsellers {
   border: 1px solid #e9e9e9;
   margin-bottom: 30px;
 }
 
-.sidebar-register .container .row .sidebar .bestsellers__title h2 {
+.sidebar-login .container .row .sidebar .bestsellers__title h2 {
   background: #f5f5f5;
   padding: 15px;
   border: medium none;
@@ -557,45 +557,45 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   font-size: 16px;
 }
 
-.sidebar-register .container .row .sidebar .bestsellers__products__product {
+.sidebar-login .container .row .sidebar .bestsellers__products__product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 15px 15px 0;
 }
 
-.sidebar-register .container .row .sidebar .bestsellers__products__product__desc {
+.sidebar-login .container .row .sidebar .bestsellers__products__product__desc {
   margin-left: 10px;
 }
 
-.sidebar-register .container .row .sidebar .bestsellers__products__product__desc .name {
+.sidebar-login .container .row .sidebar .bestsellers__products__product__desc .name {
   white-space: normal;
   font-size: 15px;
   font-weight: 400;
   color: #222;
 }
 
-.sidebar-register .container .row .sidebar .bestsellers__products__product__desc .price {
+.sidebar-login .container .row .sidebar .bestsellers__products__product__desc .price {
   font-size: 14px;
   margin-bottom: 2px;
   color: #eb4d4b;
 }
 
-.sidebar-register .container .row .sidebar .bestsellers__products__product__desc .oldPrice {
+.sidebar-login .container .row .sidebar .bestsellers__products__product__desc .oldPrice {
   -webkit-text-decoration-line: line-through !important;
           text-decoration-line: line-through !important;
 }
 
-.sidebar-register .container .row .sidebar .product-poster {
+.sidebar-login .container .row .sidebar .product-poster {
   position: relative;
   margin-bottom: 30px;
 }
 
-.sidebar-register .container .row .sidebar .product-poster .poster img {
+.sidebar-login .container .row .sidebar .product-poster .poster img {
   width: 100%;
 }
 
-.sidebar-register .container .row .sidebar .product-poster:hover ::after {
+.sidebar-login .container .row .sidebar .product-poster:hover ::after {
   position: absolute;
   content: '';
   left: 0;
@@ -639,92 +639,39 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   }
 }
 
-.sidebar-register .container .row .register__content .alert {
-  padding: 12px 14px 12px 14px;
-  color: #8a6d3b;
-  background-color: #fcf8e3;
-  border-color: #faebcc !important;
-  text-align: center;
+.sidebar-login .container .row .col-md-6 a:hover {
+  background-color: #eb4d4b !important;
 }
 
-.sidebar-register .container .row .register__content .alert a {
-  color: #222;
-}
-
-.sidebar-register .container .row .register__content form legend {
-  color: #222;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 7px 0px;
-  border-bottom: 1px solid #e5e5e5;
+.sidebar-login .container .row .col-md-6 .well {
+  padding: 19px;
   margin-bottom: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
 }
 
-.sidebar-register .container .row .register__content form .radio label {
-  color: #232323;
+.sidebar-login .container .row .col-md-6 .well h2 {
+  color: #333;
+  font: 600 16px/24px 'Poppins', sans-serif;
+  margin: 0 0 15px;
+}
+
+.sidebar-login .container .row .col-md-6 .well h3 {
   font-weight: 500;
-  padding: 7px 15px;
-}
-
-.sidebar-register .container .row .register__content form .radio span {
-  color: #222;
-}
-
-.sidebar-register .container .row .register__content form .form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: #232323;
+  font-size: 14px;
   margin-bottom: 15px;
 }
 
-.sidebar-register .container .row .register__content form .form-group label {
-  width: 20%;
-  color: #232323;
-  font-weight: 500;
-  padding: 7px 15px;
+.sidebar-login .container .row .col-md-6 .well p {
+  color: #333;
+  line-height: 22px;
+  font-size: 13px;
+  margin-bottom: 15px;
 }
 
-.sidebar-register .container .row .register__content form .form-group label::before {
-  content: '* ';
-  color: #f00;
-  font-weight: bold;
-}
-
-.sidebar-register .container .row .register__content form .form-group input {
-  width: 80%;
+.sidebar-login .container .row .col-md-6 .well a {
   display: inline-block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 12px;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid;
-  border-color: #e9e9e9;
-}
-
-@media screen and (max-width: 568px) {
-  .sidebar-register .container .row .register__content form .form-group {
-    display: block;
-  }
-  .sidebar-register .container .row .register__content form .form-group label {
-    width: 100%;
-    padding: 6px 0;
-  }
-}
-
-.sidebar-register .container .row .register__content .buttons .pull-right {
-  float: right;
-  margin: 1em 0;
-}
-
-.sidebar-register .container .row .register__content .buttons .pull-right b {
-  color: #222;
-}
-
-.sidebar-register .container .row .register__content .buttons .pull-right .continuebtn {
   padding: 10px 20px;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
@@ -732,7 +679,36 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   color: #fff;
   background-color: #232323;
   border: 1px solid #232323;
+  outline: none;
   line-height: 18px;
+}
+
+.sidebar-login .container .row .col-md-6 .login-form .form-group {
+  margin-bottom: 15px !important;
+}
+
+.sidebar-login .container .row .col-md-6 .login-form label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #232323;
+}
+
+.sidebar-login .container .row .col-md-6 .login-form input {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 12px;
+  margin: 0 0 5px !important;
+  line-height: 1.42857143;
+  color: #555;
+  border: 1px solid #ccc;
+}
+
+.sidebar-login .container .row .col-md-6 .login-form span {
+  color: #222;
+  display: block;
 }
 
 .footer-before {
@@ -1155,4 +1131,4 @@ footer .container .footer-block ul li a {
     line-height: 27px;
   }
 }
-/*# sourceMappingURL=register.css.map */
+/*# sourceMappingURL=login.css.map */
