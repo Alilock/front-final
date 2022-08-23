@@ -512,6 +512,10 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   position: relative;
 }
 
+.error-page {
+  display: none;
+}
+
 .error-page .contBtn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,9 +542,120 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   width: max-content;
 }
 
+.shopCard .shopTable {
+  width: 100%;
+}
+
+.shopCard .shopTable thead td {
+  padding: 10px 15px;
+  background: #f8f8f8 none repeat scroll 0 0;
+  color: #222;
+  font-weight: 500;
+  border: 1px solid #e9e9e9;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.shopCard .shopTable tbody tr td {
+  padding: 10px 15px;
+  color: #232323;
+  font-weight: 500;
+  border: 1px solid #e9e9e9;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.shopCard .shopTable tbody tr .pro-count .input-group input {
+  border-radius: 0;
+  display: inline-block;
+  width: 60px !important;
+  text-align: center;
+  margin: 0 0 5px;
+  width: auto;
+  font-size: 12px;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  color: #222;
+  border: 1px solid #e9e9e9;
+  margin: 0;
+}
+
+.shopCard .shopTable tbody tr .pro-count .input-group button {
+  padding: 8px 14px;
+  line-height: 18px;
+  color: white;
+  border: none;
+}
+
+.shopCard .shopTable tbody tr .pro-count .input-group .refresh-btn {
+  background-color: black;
+}
+
+.shopCard .shopTable tbody tr .pro-count .input-group .remove-btn {
+  background-color: #da4f49;
+}
+
+.shopCard .shopTable tbody tr .price {
+  color: #333;
+  font-size: 13px;
+}
+
+.shopCard .shop-featured h3 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .accordion-body label {
+  color: #232323;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .accordion-body form {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: table;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .accordion-body form input {
+  width: 70%;
+  background: #fff;
+  border-color: #e9e9e9;
+  color: #9c9b9b;
+  margin: 0 0 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .accordion-body form .apply {
+  padding: 8px 14px;
+  line-height: 16px;
+  padding: 8px 14px;
+  font-size: 12px;
+  background-color: #232323;
+  border: 1px solid #232323;
+  color: white;
+}
+
 .footer-before {
   padding: 40px 0 35px;
   background: #f2f6f9;
+  margin-top: 30px;
 }
 
 .footer-before .container .row .my__card {
