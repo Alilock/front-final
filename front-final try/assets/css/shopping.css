@@ -560,6 +560,14 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   vertical-align: middle;
 }
 
+.shopCard .shopTable tbody tr .image {
+  width: 113px;
+}
+
+.shopCard .shopTable tbody tr .image img {
+  width: 100%;
+}
+
 .shopCard .shopTable tbody tr td {
   padding: 10px 15px;
   color: #232323;
@@ -570,7 +578,6 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   line-height: 20px;
   letter-spacing: 0.6px;
   text-transform: capitalize;
-  vertical-align: middle;
   text-align: center;
 }
 
@@ -597,7 +604,13 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
 }
 
 .shopCard .shopTable tbody tr .pro-count .input-group .refresh-btn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: black;
+}
+
+.shopCard .shopTable tbody tr .pro-count .input-group .refresh-btn:hover {
+  background: #da4f49;
 }
 
 .shopCard .shopTable tbody tr .pro-count .input-group .remove-btn {
@@ -617,6 +630,23 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
   color: #222;
 }
 
+.shopCard .shop-featured .accordion .accordion-item {
+  outline: 0 !important;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .accordion-header {
+  outline: 0 !important;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .accordion-header button {
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .accordion-body p {
+  color: #888888;
+}
+
 .shopCard .shop-featured .accordion .accordion-item .accordion-body label {
   color: #232323;
   margin-bottom: 5px;
@@ -626,30 +656,128 @@ header .row .login-basket .register .register-dropdown ul .currencywrapper ul li
 .shopCard .shop-featured .accordion .accordion-item .accordion-body form {
   padding: 0 !important;
   margin: 0 !important;
-  display: table;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .shopCard .shop-featured .accordion .accordion-item .accordion-body form input {
-  width: 70%;
-  background: #fff;
   border-color: #e9e9e9;
   color: #9c9b9b;
-  margin: 0 0 5px;
   display: inline-block;
   border: 1px solid #ccc;
   padding: 6px 12px;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  border-right: none;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .shopCard .shop-featured .accordion .accordion-item .accordion-body form .apply {
-  padding: 8px 14px;
-  line-height: 16px;
   padding: 8px 14px;
   font-size: 12px;
   background-color: #232323;
   border: 1px solid #232323;
   color: white;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .second-accordion .post-code {
+  margin: 15px 0;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .second-accordion .post-code input {
+  display: block;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .second-accordion form {
+  display: block;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .second-accordion form .form-group {
+  margin: 15px 0;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .second-accordion form .form-group select {
+  color: #9c9b9b;
+  margin: 0px 0px 5px;
+  font-size: 12px;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  text-decoration: none;
+  text-align: left;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 6px 12px;
+}
+
+.shopCard .shop-featured .accordion .accordion-item .second-accordion form .form-group label::before {
+  content: "* ";
+  color: red;
+  font-weight: bold;
+}
+
+.shopCard .shop-featured table {
+  width: 100%;
+}
+
+.shopCard .shop-featured table tr {
+  width: 100%;
+  text-align: right;
+}
+
+.shopCard .shop-featured table tr td {
+  padding: 10px 15px;
+  border: 1px solid #e9e9e9;
+  font-size: 13px;
+}
+
+.shopCard .shop-featured table tr .title {
+  color: #222;
+}
+
+.shopCard .shop-featured .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 35px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shopCard .shop-featured .buttons .checkout-btn a {
+  background-color: #222;
+}
+
+.shopCard .shop-featured .buttons .checkout-btn a:hover {
+  background-color: #eb4d4b;
+}
+
+.shopCard .shop-featured .buttons a {
+  background-color: #eb4d4b;
+  color: white;
+  outline: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 0px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.shopCard .shop-featured .buttons a:hover {
+  background: #222;
 }
 
 .footer-before {

@@ -535,7 +535,16 @@ header {
         }
 
         tbody {
+
             tr {
+                .image {
+                    width: 113px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
                 td {
                     padding: 10px 15px;
                     color: #232323;
@@ -546,7 +555,6 @@ header {
                     line-height: 20px;
                     letter-spacing: 0.6px;
                     text-transform: capitalize;
-                    vertical-align: middle;
                     text-align: center;
                 }
 
@@ -576,7 +584,12 @@ header {
                         }
 
                         .refresh-btn {
+                            transition: 0.5s;
                             background-color: black;
+
+                            &:hover {
+                                background: #da4f49;
+                            }
 
                         }
 
@@ -607,7 +620,24 @@ header {
 
         .accordion {
             .accordion-item {
+                outline: 0 !important;
+
+                .accordion-header {
+                    outline: 0 !important;
+
+                    button {
+                        padding: 10px 15px;
+                        background-color: #f8f8f8;
+
+                    }
+                }
+
                 .accordion-body {
+
+                    p {
+                        color: rgb(136, 136, 136);
+                    }
+
                     label {
                         color: #232323;
                         margin-bottom: 5px;
@@ -617,23 +647,23 @@ header {
                     form {
                         padding: 0 !important;
                         margin: 0 !important;
-                        display: table;
+                        // margin: 0 0 5px;
+                        display: flex;
+                        justify-content: space-between;
 
                         input {
-                            width: 70%;
-                            background: #fff;
                             border-color: #e9e9e9;
                             color: #9c9b9b;
-                            margin: 0 0 5px;
                             display: inline-block;
                             border: 1px solid #ccc;
                             padding: 6px 12px;
                             box-shadow: none !important;
+                            border-right: none;
+                            width: 100%;
+                            flex: 1;
                         }
 
                         .apply {
-                            padding: 8px 14px;
-                            line-height: 16px;
                             padding: 8px 14px;
                             font-size: 12px;
                             background-color: #232323;
@@ -642,6 +672,101 @@ header {
                         }
                     }
 
+                }
+
+                .second-accordion {
+                    .post-code {
+                        margin: 15px 0;
+
+                        input {
+                            display: block;
+                        }
+                    }
+
+                    form {
+                        display: block;
+
+                        .form-group {
+                            margin: 15px 0;
+
+                            select {
+                                color: rgb(156, 155, 155);
+                                margin: 0px 0px 5px;
+                                font-size: 12px;
+                                border: 1px solid rgb(224, 224, 224);
+                                position: relative;
+                                text-decoration: none;
+                                text-align: left;
+                                border-radius: 0px;
+                                box-shadow: none;
+                                cursor: pointer;
+                                width: 100%;
+                                padding: 6px 12px;
+                            }
+
+                            label {
+                                &::before {
+                                    content: "* ";
+                                    color: rgb(255, 0, 0);
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        table {
+            width: 100%;
+
+            tr {
+                width: 100%;
+                text-align: right;
+
+                td {
+                    padding: 10px 15px;
+                    border: 1px solid rgb(233, 233, 233);
+                    font-size: 13px;
+                }
+
+                .title {
+                    color: #222;
+                }
+            }
+        }
+
+        .buttons {
+            display: flex;
+            margin: 35px 0;
+            justify-content: space-between;
+
+            .checkout-btn {
+                a {
+                    background-color: #222;
+
+                    &:hover {
+                        background-color: rgb(235, 77, 75);
+
+                    }
+                }
+
+            }
+
+            a {
+                background-color: rgb(235, 77, 75);
+                color: rgb(255, 255, 255);
+                outline: none;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 400;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                border-radius: 0px;
+                transition: all 0.5s ease 0s;
+
+                &:hover {
+                    background: #222;
                 }
             }
         }

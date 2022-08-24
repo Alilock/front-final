@@ -199,7 +199,7 @@
         </div>
     </div>
     <section class="shopCard">
-        <div class="container">
+        <div class="container shop__container">
             <table class="shopTable">
                 <thead>
                     <tr>
@@ -212,52 +212,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="pro-desc">
-                        <td class="image">
-                            <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/12-90x90.jpg"
-                                alt="">
-                        </td>
-                        <td class="pro-name">
-                            HTC Touch HD
-                        </td>
-                        <td class="pro-ID">
-                            Product <span class="id">1</span>
-                        </td>
-                        <td class="pro-count">
-                            <div class="input-group">
-                                <input type="text" placeholder="1">
-                                <button class="refresh-btn"><i class="fa-solid fa-rotate"></i></button>
-                                <button class="remove-btn"><i class="bi bi-x-circle"></i></button>
-                            </div>
-                        </td>
-                        <td class="pro-price price">
-                            <span class="price">$74.73</span>
-                        </td>
-                        <td class="pro-total-price price">$74.73</td>
-                    </tr>
-                    <tr class="pro-desc">
-                        <td class="image">
-                            <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/12-90x90.jpg"
-                                alt="">
-                        </td>
-                        <td class="pro-name">
-                            HTC Touch HD
-                        </td>
-                        <td class="pro-ID">
-                            Product <span class="id">1</span>
-                        </td>
-                        <td class="pro-count">
-                            <div class="input-group">
-                                <input type="text" placeholder="1">
-                                <button class="refresh-btn"><i class="fa-solid fa-rotate"></i></button>
-                                <button class="remove-btn"><i class="bi bi-x-circle"></i></button>
-                            </div>
-                        </td>
-                        <td class="pro-price price">
-                            <span class="price">$74.73</span>
-                        </td>
-                        <td class="pro-total-price price">$74.73</td>
-                    </tr>
+
+                  
                 </tbody>
             </table>
             <div class="shop-featured">
@@ -265,7 +221,7 @@
                 <p>Choose if you have a discount code or reward points you want to use or would like to estimate your
                     delivery cost.</p>
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-lg-8 col-12">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
@@ -278,12 +234,13 @@
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 
                                     <div class="accordion-body">
-                                    <label for="coupon">Enter your coupon here</label>
+                                        <label for="coupon">Enter your coupon here</label>
 
                                         <form action="">
-                                            <input type="text" name="coupon" placeholder="Enter your coupon here" id=""> <span class="apply">Apply Coupon</span>
+                                            <input type="text" name="coupon" placeholder="Enter your coupon here" id="">
+                                            <span class="apply">Apply Coupon</span>
                                         </form>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -291,19 +248,40 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                            Accordion Item #2
+                                            Estimate Shipping & Taxes
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
+                                        <div class="accordion-body second-accordion">
+                                            <form action="">
+                                                <p>Enter your destination to get a shipping estimate.</p>
+                                                <div class="form-group">
+                                                    <label for="country">Country</label>
+                                                    <select name="country" id="">
+                                                        <option value=""> --- Please Select --- </option>
+                                                        <option value="">English</option>
+                                                        <option value="">Norway</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="country">Region/State</label>
+                                                    <select name="country" id="">
+                                                        <option value=""> --- Please Select --- </option>
+                                                        <option value="">London</option>
+                                                        <option value="">Oslo</option>
+                                                    </select>
+                                                </div>
+                                                <div class="post-code">
+                                                    <label for="pc">Post Code</label>
+                                                    <input type="text" placeholder="Post Code" name="" id="">
+                                                </div>
+                                                <span style="padding: 10px 15px; display: inline-block;"
+                                                    class="apply">Get Quostes</span>
+
+
+
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -312,24 +290,54 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                             aria-expanded="false" aria-controls="collapseThree">
-                                            Accordion Item #3
+                                            Use Gift Certificate
                                         </button>
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse"
                                         aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong> It is hidden by
-                                            default, until the collapse plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the overall appearance, as well
-                                            as the showing and hiding via CSS transitions. You can modify any of this
-                                            with custom CSS or overriding our default variables. It's also worth noting
-                                            that just about any HTML can go within the <code>.accordion-body</code>,
-                                            though the transition does limit overflow.
+                                            <label for="coupon">Enter your gift certificate code here</label>
+
+                                            <form action="">
+                                                <input type="text" name="coupon"
+                                                    placeholder="Enter your gift certificate code here" id="">
+                                                <span class="apply">Apply Gift Certificate</span>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="title">Sub-Total:</td>
+                                    <td class="sub-total">$77.90</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">Eco Tax (-2.00):</td>
+                                    <td class="sub-total">$2.3</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">VAT (20%):</td>
+                                    <td class="sub-total">$12.90</td>
+                                </tr>
+                                <tr>
+                                    <td class="title">  Total:</td>
+                                    <td class="sub-total">$77.90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="continue-btn">
+                        <a href="">Countinue Shopping</a>
+                    </div>
+                    <div class="checkout-btn">
+                        <a href="">Checkout</a>
                     </div>
                 </div>
             </div>
@@ -426,7 +434,7 @@
         </div>
     </section>
 
-
+    <script src="./js/shopping.js"></script>
     <!-- jquerry -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- owlCarousel -->

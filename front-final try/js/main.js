@@ -158,6 +158,7 @@ function SubTotal() {
 }
 deleteItem()
 function deleteItem() {
+    
     let basket = JSON.parse(localStorage.getItem('basket'))
     let deleteBtns = document.querySelectorAll('.deleteItem')
     if (deleteBtns) {
@@ -180,10 +181,11 @@ function deleteItem() {
                 basketSpan.innerText = basket.length;
                 SubTotal()
                 emptyCard()
-
+                
             })
         })
     }
+  
 }
 emptyCard()
 function emptyCard() {
