@@ -102,3 +102,4 @@ function ChangeStyle() {
         errorPage.style.display = 'block'
     }
 }
+
