@@ -1602,28 +1602,14 @@ footer .container .footer-block ul li a {
     font-size: 13px;
     color: #666;
   }
-  header .login-basket-wrapper i {
-    color: white;
-  }
-  header .login-basket-wrapper i:hover {
-    color: red;
-  }
-  header .login-basket-wrapper .active {
-    scale: 2 !important;
-  }
-  header .login-basket-wrapper .cardbox {
-    width: 340px !important;
-    top: 40px;
-    scale: 0;
-  }
-  header .login-basket-wrapper .searchwrapper {
+  header .searchwrapper {
     display: block !important;
     position: relative;
   }
-  header .login-basket-wrapper .searchwrapper .active {
+  header .searchwrapper .active {
     scale: 1 !important;
   }
-  header .login-basket-wrapper .searchwrapper .search {
+  header .searchwrapper .search {
     -webkit-transition: 0.4s;
     transition: 0.4s;
     display: -webkit-box;
@@ -1645,11 +1631,25 @@ footer .container .footer-block ul li a {
             align-items: center;
     scale: 0;
   }
-  header .login-basket-wrapper .searchwrapper .search input {
+  header .searchwrapper .search input {
     border: none !important;
   }
-  header .login-basket-wrapper .searchwrapper .search i {
+  header .searchwrapper .search i {
     color: black;
+  }
+  header .login-basket-wrapper i {
+    color: white;
+  }
+  header .login-basket-wrapper i:hover {
+    color: red;
+  }
+  header .login-basket-wrapper .active {
+    scale: 2 !important;
+  }
+  header .login-basket-wrapper .cardbox {
+    width: 340px !important;
+    top: 40px;
+    scale: 0;
   }
   .headeractive {
     position: fixed;
