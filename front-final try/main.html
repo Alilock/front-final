@@ -26,9 +26,9 @@
     <!-- MyCss -->
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Your Store</title>
-         <!-- add icon link -->
-         <link rel = "icon" href="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/cart.png"
-         type = "image/x-icon">
+    <!-- add icon link -->
+    <link rel="icon" href="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/cart.png"
+        type="image/x-icon">
 </head>
 
 <body>
@@ -66,8 +66,9 @@
 
                 <div class="logo-wrapper col-4 col-lg-3 ">
                     <div class="logo">
-                        <img class="img-responsive"
-                            src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/Logo.png" alt="">
+                        <a href="">   <img class="img-responsive"
+                            src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/Logo.png" alt=""></a>
+                       
                     </div>
                 </div>
                 <div class="menuwrapper col-lg-7 d-none">
@@ -114,13 +115,23 @@
                     </ul>
                 </div>
                 <div class="login-basket col-4 col-lg-2">
+                    
+                    
                     <div class="login-basket-wrapper">
+                        <div class="searchwrapper">
+                            <i style="font-size: 20px;" class="bi bi-search"></i>
+                            <form class="search">
+                                <input type="text" placeholder="Search Our Catalog" name="" id="">
+                                <i class="bi bi-search"></i>
+    
+                            </form>
+                        </div>
                         <div class="register">
                             <i class="bi bi-person"></i>
                             <div class="register-dropdown">
                                 <ul>
                                     <li><a href="register.html">Register</a></li>
-                                    <li><a href="">Login</a></li>
+                                    <li><a href="login.html">Login</a></li>
                                     <li><a href="">Wish List(0)</a></li>
                                     <div class="languageswrapper">
                                         <div class="language">
@@ -172,7 +183,7 @@
                                         </a>
                                     </div>
                                 </div>
-                               
+
                                 <div class="cardbox__empty">
                                     <span>Your shopping card is empty!</span>
                                 </div>
@@ -423,70 +434,91 @@
                     <div class="my__item">
                         <div class="item__row row">
                             <div class="item__row__col col-12">
-                                <div class="my__card">
-                                    <div class="my__card__image">
+                                <div class="product-wrapper">
+                                    <div class="image">
+                                        <img class="mainimg" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-370x370.jpg"
+                                            alt="">
+                                        <img class="hoveredimg"
+                                            src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/15-370x370.jpg"
+                                            alt="">
+                                        <div class="rating">
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="button-group">
+                                            <div class="quick-view icon">
+                                                <i class="bi bi-eye"></i>
+                                            </div>
+                                            <div class="wish icon">
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+                                            <div class="chart icon">
+                                                <i class="bi bi-bar-chart-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <div class="title">
+                                            <h4>Apple Cinema 30"</h4>
+                                            <p class="description">
+                                                The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600
+                                                pixel resolution. Designed speci..
+                                            </p>
+                                            <p class="price">$77.74</p>
+
+                                        </div>
+                                        <div class="addbtn">
+                                            <button> Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item__row row">
+                            <div class="item__row__col col-12">
+                                <div class="product-wrapper">
+                                    <div class="image">
                                         <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-370x370.jpg"
-                                            alt="item1.jpg">
-                                        <img class="image__hovered"
-                                            src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/12-370x370.jpg"
-                                            alt="item1.jpg">
+                                            alt="">
+                                        <img class="hoveredimg"
+                                            src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg"
+                                            alt="">
                                         <div class="rating">
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi bi-star"></span>
-                                            <span class="bi bi-star"></span>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                         </div>
                                         <div class="button-group">
-                                            <div class="btn-quickview">
-                                                <i class="bi bi-eye-fill"></i>
+                                            <div class="quick-view icon">
+                                                <i class="bi bi-eye"></i>
                                             </div>
-                                            <div class="btn-wishadd">
-                                                <i class="bi bi-balloon-heart"></i>
+                                            <div class="wish icon">
+                                                <i class="bi bi-heart"></i>
                                             </div>
-                                            <div class="btn-analys">
-                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            <div class="chart icon">
+                                                <i class="bi bi-bar-chart-line"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="my__card__title">
-                                        <h4><a class="proname" href="">Apple Cinema 30"</a></h4>
-                                        <span class="price">$94.73</span>
-                                        <button>add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
+                                    <div class="caption">
+                                        <div class="title">
+                                            <h4>HTC Touch HD</h4>
+                                            <p class="description">
+                                                The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600
+                                                pixel resolution. Designed speci..
+                                            </p>
+                                            <p class="price">$77.74</p>
 
-                        </div>
-                        <div class="item__row row">
-                            <div class="item__row__col col-12">
-                                <div class="my__card">
-                                    <div class="my__card__image">
-                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/12-370x370.jpg"
-                                            alt="item1.jpg">
-                                        <div class="rating">
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi bi-star"></span>
-                                            <span class="bi bi-star"></span>
-                                            <span class="bi bi-star"></span>
                                         </div>
-                                        <div class="button-group">
-                                            <div class="btn-quickview">
-                                                <i class="bi bi-eye-fill"></i>
-                                            </div>
-                                            <div class="btn-wishadd">
-                                                <i class="bi bi-balloon-heart"></i>
-                                            </div>
-                                            <div class="btn-analys">
-                                                <i class="bi bi-bar-chart-line-fill"></i>
-                                            </div>
+                                        <div class="addbtn">
+                                            <button> Add To Cart</button>
                                         </div>
-                                    </div>
-                                    <div class="my__card__title">
-                                        <h4><a class="proname" href="">Canon Eos 5D</a></h4>
-                                        <span class="price">$74.73</span>
-                                        <button>add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -495,33 +527,45 @@
                     <div class="my__item">
                         <div class="item__row row">
                             <div class="item__row__col col-12">
-                                <div class="my__card">
-                                    <div class="my__card__image">
-                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/12-370x370.jpg"
-                                            alt="item1.jpg">
+                                <div class="product-wrapper">
+                                    <div class="image">
+                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-370x370.jpg"
+                                            alt="">
+                                        <img class="hoveredimg"
+                                            src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg"
+                                            alt="">
                                         <div class="rating">
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi bi-star"></span>
-                                            <span class="bi bi-star"></span>
-                                            <span class="bi bi-star"></span>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                         </div>
                                         <div class="button-group">
-                                            <div class="btn-quickview">
-                                                <i class="bi bi-eye-fill"></i>
+                                            <div class="quick-view icon">
+                                                <i class="bi bi-eye"></i>
                                             </div>
-                                            <div class="btn-wishadd">
-                                                <i class="bi bi-balloon-heart"></i>
+                                            <div class="wish icon">
+                                                <i class="bi bi-heart"></i>
                                             </div>
-                                            <div class="btn-analys">
-                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            <div class="chart icon">
+                                                <i class="bi bi-bar-chart-line"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="my__card__title">
-                                        <h4><a class="proname" href="">HTC Touch HD</a></h4>
-                                        <span class="price">$74.73</span>
-                                        <button>add to cart</button>
+                                    <div class="caption">
+                                        <div class="title">
+                                            <h4>Ipod Shuffle</h4>
+                                            <p class="description">
+                                                The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600
+                                                pixel resolution. Designed speci..
+                                            </p>
+                                            <p class="price">$97.74</p>
+
+                                        </div>
+                                        <div class="addbtn">
+                                            <button> Add To Cart</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -529,103 +573,45 @@
                         </div>
                         <div class="item__row row">
                             <div class="item__row__col col-12">
-                                <div class="my__card">
-                                    <div class="my__card__image">
-                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/16-370x370.jpg"
-                                            alt="item1.jpg">
+                                <div class="product-wrapper">
+                                    <div class="image">
+                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-370x370.jpg"
+                                            alt="">
+                                        <img class="hoveredimg"
+                                            src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg"
+                                            alt="">
                                         <div class="rating">
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                         </div>
                                         <div class="button-group">
-                                            <div class="btn-quickview">
-                                                <i class="bi bi-eye-fill"></i>
+                                            <div class="quick-view icon">
+                                                <i class="bi bi-eye"></i>
                                             </div>
-                                            <div class="btn-wishadd">
-                                                <i class="bi bi-balloon-heart"></i>
+                                            <div class="wish icon">
+                                                <i class="bi bi-heart"></i>
                                             </div>
-                                            <div class="btn-analys">
-                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            <div class="chart icon">
+                                                <i class="bi bi-bar-chart-line"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="my__card__title">
-                                        <h4><a class="proname" href="">Ipod Nano</a></h4>
-                                        <span class="price">$55.99</span>
-                                        <button>add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
+                                    <div class="caption">
+                                        <div class="title">
+                                            <h4>Imac</h4>
+                                            <p class="description">
+                                                The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600
+                                                pixel resolution. Designed speci..
+                                            </p>
+                                            <p class="price">$77.74</p>
 
-                        </div>
-                    </div>
-                    <div class="my__item">
-                        <div class="item__row row">
-                            <div class="item__row__col col-12">
-                                <div class="my__card">
-                                    <div class="my__card__image">
-                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/17-370x370.jpg"
-                                            alt="item1.jpg">
-                                        <div class="rating">
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi bi-star"></span>
-                                            <span class="bi bi-star"></span>
                                         </div>
-                                        <div class="button-group">
-                                            <div class="btn-quickview">
-                                                <i class="bi bi-eye-fill"></i>
-                                            </div>
-                                            <div class="btn-wishadd">
-                                                <i class="bi bi-balloon-heart"></i>
-                                            </div>
-                                            <div class="btn-analys">
-                                                <i class="bi bi-bar-chart-line-fill"></i>
-                                            </div>
+                                        <div class="addbtn">
+                                            <button> Add To Cart</button>
                                         </div>
-                                    </div>
-                                    <div class="my__card__title">
-                                        <h4><a class="proname" href="">Ipod Shuffle</a></h4>
-                                        <span class="price">$74.73</span>
-                                        <button>add to cart</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="item__row row">
-                            <div class="item__row__col col-12">
-                                <div class="my__card">
-                                    <div class="my__card__image">
-                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/11-370x370.jpg"
-                                            alt="item1.jpg">
-                                        <div class="rating">
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi bi-star"></span>
-                                            <span class="bi  bi-star"></span>
-                                            <span class="bi  bi-star"></span>
-                                        </div>
-                                        <div class="button-group">
-                                            <div class="btn-quickview">
-                                                <i class="bi bi-eye-fill"></i>
-                                            </div>
-                                            <div class="btn-wishadd">
-                                                <i class="bi bi-balloon-heart"></i>
-                                            </div>
-                                            <div class="btn-analys">
-                                                <i class="bi bi-bar-chart-line-fill"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="my__card__title">
-                                        <h4><a class="proname" href="">HP LP3065</a></h4>
-                                        <span class="price">$88.99</span>
-                                        <button>add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -635,33 +621,45 @@
                     <div class="my__item">
                         <div class="item__row row">
                             <div class="item__row__col col-12">
-                                <div class="my__card">
-                                    <div class="my__card__image">
-                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/13-370x370.jpg"
-                                            alt="item1.jpg">
+                                <div class="product-wrapper">
+                                    <div class="image">
+                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-370x370.jpg"
+                                            alt="">
+                                        <img class="hoveredimg"
+                                            src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg"
+                                            alt="">
                                         <div class="rating">
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi bi-star"></span>
-                                            <span class="bi bi-star"></span>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                         </div>
                                         <div class="button-group">
-                                            <div class="btn-quickview">
-                                                <i class="bi bi-eye-fill"></i>
+                                            <div class="quick-view icon">
+                                                <i class="bi bi-eye"></i>
                                             </div>
-                                            <div class="btn-wishadd">
-                                                <i class="bi bi-balloon-heart"></i>
+                                            <div class="wish icon">
+                                                <i class="bi bi-heart"></i>
                                             </div>
-                                            <div class="btn-analys">
-                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            <div class="chart icon">
+                                                <i class="bi bi-bar-chart-line"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="my__card__title">
-                                        <h4><a class="proname" href="">IMac</a></h4>
-                                        <span class="price">$30.63</span>
-                                        <button>add to cart</button>
+                                    <div class="caption">
+                                        <div class="title">
+                                            <h4>Ipod Classic</h4>
+                                            <p class="description">
+                                                The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600
+                                                pixel resolution. Designed speci..
+                                            </p>
+                                            <p class="price">$77.74</p>
+
+                                        </div>
+                                        <div class="addbtn">
+                                            <button> Add To Cart</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -669,33 +667,139 @@
                         </div>
                         <div class="item__row row">
                             <div class="item__row__col col-12">
-                                <div class="my__card">
-                                    <div class="my__card__image">
-                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/15-370x370.jpg"
-                                            alt="item1.jpg">
+                                <div class="product-wrapper">
+                                    <div class="image">
+                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-370x370.jpg"
+                                            alt="">
+                                        <img class="hoveredimg"
+                                            src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg"
+                                            alt="">
                                         <div class="rating">
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi yellow bi-star"></span>
-                                            <span class="bi bi-star"></span>
-                                            <span class="bi  bi-star"></span>
-                                            <span class="bi  bi-star"></span>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                         </div>
                                         <div class="button-group">
-                                            <div class="btn-quickview">
-                                                <i class="bi bi-eye-fill"></i>
+                                            <div class="quick-view icon">
+                                                <i class="bi bi-eye"></i>
                                             </div>
-                                            <div class="btn-wishadd">
-                                                <i class="bi bi-balloon-heart"></i>
+                                            <div class="wish icon">
+                                                <i class="bi bi-heart"></i>
                                             </div>
-                                            <div class="btn-analys">
-                                                <i class="bi bi-bar-chart-line-fill"></i>
+                                            <div class="chart icon">
+                                                <i class="bi bi-bar-chart-line"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="my__card__title">
-                                        <h4><a class="proname" href="">IPOD Classic</a></h4>
-                                        <span class="price">$23.28</span>
-                                        <button>add to cart</button>
+                                    <div class="caption">
+                                        <div class="title">
+                                            <h4>HP LP3065</h4>
+                                            <p class="description">
+                                                The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600
+                                                pixel resolution. Designed speci..
+                                            </p>
+                                            <p class="price">$77.74</p>
+
+                                        </div>
+                                        <div class="addbtn">
+                                            <button> Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="my__item">
+                        <div class="item__row row">
+                            <div class="item__row__col col-12">
+                                <div class="product-wrapper">
+                                    <div class="image">
+                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-370x370.jpg"
+                                            alt="">
+                                        <img class="hoveredimg"
+                                            src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg"
+                                            alt="">
+                                        <div class="rating">
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="button-group">
+                                            <div class="quick-view icon">
+                                                <i class="bi bi-eye"></i>
+                                            </div>
+                                            <div class="wish icon">
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+                                            <div class="chart icon">
+                                                <i class="bi bi-bar-chart-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <div class="title">
+                                            <h4>Ipod Nano</h4>
+                                            <p class="description">
+                                                The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600
+                                                pixel resolution. Designed speci..
+                                            </p>
+                                            <p class="price">$77.74</p>
+
+                                        </div>
+                                        <div class="addbtn">
+                                            <button> Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item__row row">
+                            <div class="item__row__col col-12">
+                                <div class="product-wrapper">
+                                    <div class="image">
+                                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-370x370.jpg"
+                                            alt="">
+                                        <img class="hoveredimg"
+                                            src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg"
+                                            alt="">
+                                        <div class="rating">
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="yellow fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="button-group">
+                                            <div class="quick-view icon">
+                                                <i class="bi bi-eye"></i>
+                                            </div>
+                                            <div class="wish icon">
+                                                <i class="bi bi-heart"></i>
+                                            </div>
+                                            <div class="chart icon">
+                                                <i class="bi bi-bar-chart-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <div class="title">
+                                            <h4>Canon EOS 5D</h4>
+                                            <p class="description">
+                                                The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600
+                                                pixel resolution. Designed speci..
+                                            </p>
+                                            <p class="price">$77.74</p>
+
+                                        </div>
+                                        <div class="addbtn">
+                                            <button> Add To Cart</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1021,7 +1125,7 @@
             nav: true,
             autoplay: true,
 
-            autoplayTimeout: 3000,
+            autoplayTimeout: 1400,
             responsive: {
                 0: {
                     items: 2

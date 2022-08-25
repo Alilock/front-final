@@ -158,6 +158,10 @@ header {
             align-items: center;
             justify-content: end;
 
+            .searchwrapper {
+                display: none;
+            }
+
             .login-basket-wrapper {
                 float: right;
                 display: flex;
@@ -945,109 +949,206 @@ header {
 
 
         .item__row {
-            padding: 5px;
+            padding: 5px 10px;
 
 
-            .my__card {
-                &__title {
-                    .proname {
-                        color: #222;
-                        white-space: nowrap;
-                        font-size: 15px;
-                        font-weight: 500;
-                        letter-spacing: 0.45px;
-                        line-height: 20px;
+            .product-wrapper {
+                padding: 15px 20px;
+
+                &:hover {
+                    .addbtn {
+                        transform: translateY(-28px);
+                        opacity: 1;
 
                     }
 
-                    .price {
-
-                        color: #eb4d4b;
-                        font-size: 16px;
-                        font-weight: 500;
-                        margin-bottom: 7px;
-                        display: block;
+                    .icon {
+                        transform: translateX(0px) !important;
+                        opacity: 1 !important;
                     }
 
-                    button {
-                        position: relative;
-                        border: none;
-                        color: #fff;
-                        border-radius: 0;
-                        background-color: #eb4d4b;
-                        -webkit-transition: all 0.5s;
-                        -moz-transition: all 0.5s;
-                        -o-transition: all 0.5s;
-                        transition: all 0.5s;
-                        text-transform: uppercase;
-                        padding: 8px 11px;
-                        font-size: 13px;
+                    .image {
+                        .hoveredimg {
+                            transform: rotateY(0deg);
+                            opacity: 1;
+                        }
                     }
                 }
 
-                &__image {
-                    height: 180px;
+
+                text-align: center;
+                position: relative;
+                transition: 0.5s;
+                overflow: hidden;
+
+                .image {
                     position: relative;
 
-
-                    &:hover {
-                        .image__hovered {
-                            transform: rotateY(0deg);
-
-                        }
-                    }
-
                     img {
-                        height: 100%;
-
+                        width: 100%;
+                        transition: 0.6s ease-in-out;
                     }
 
-                    .image__hovered {
+                    .hoveredimg {
                         position: absolute;
                         top: 0;
-                        right: 0;
-                        width: 100%;
-                        height: 100%;
-                        z-index: 5;
-
+                        left: 0;
                         transform: rotateY(90deg);
-                        transition: 0.5s ease-in-out;
-
-
-
+                        opacity: 0;
                     }
 
                     .rating {
                         position: absolute;
-                        bottom: 4px;
+                        bottom: 10px;
                         left: 0;
                         right: 0;
-
-                        span {
-                            width: 8px;
-                            background-color: transparent;
-                            height: 8px;
-
-                        }
+                        display: flex;
+                        justify-content: center;
+                        gap: 4px;
 
                         .yellow {
-                            color: yellow;
-                            overflow: hidden;
+                            color:
+                                #fec42d;
+                        }
+
+                        i {
+                            font-size: 14px;
+                            color: #ccc
                         }
                     }
 
                     .button-group {
                         position: absolute;
-                        right: 9px;
-                        top: 5px;
-                        color: black;
+                        left: auto;
+                        right: 10px;
+                        top: 10px;
+                        display: block;
 
-                        * {
-                            height: 30px;
-                            font-size: 17px;
+                        .quick-view {
+                            transition: 0.7s;
+                        }
+
+                        .wish {
+                            transition: 0.5s;
+                        }
+
+                        .chart {
+                            transition: 0.3s;
+                        }
+
+                        .icon {
+
+                            transform: translateX(20px);
+                            opacity: 0;
+                            line-height: 0;
+                            margin-bottom: 10px;
+                            padding: 10px;
+                            background: white;
+                            border-radius: 50%;
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            display: flex;
+                            align-items: center;
+
+
+                            i {
+                                color: #222;
+                                font-size: 18px;
+                                font-weight: bold;
+                            }
+
+                            &:hover {
+                                background-color: #eb4d4b;
+
+                                i {
+                                    color: white;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+
+                .caption {
+                    padding-bottom: 10px;
+
+                    h4 {
+                        font-size: 15px;
+                        margin-bottom: 10px;
+                        color: #222;
+                    }
+
+                    .price {
+                        color: #eb4d4b;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                    }
+
+                    .description {
+                        display: none;
+                        margin-bottom: 12px;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+
+                }
+
+                .addbtn {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    transition: 0.5s;
+                    opacity: 0;
+
+                    button {
+                        border: none;
+                        color: #fff;
+                        border-radius: 0;
+                        background-color: #eb4d4b;
+                        padding: 10px 21px;
+                        text-transform: uppercase;
+                    }
+
+
+                }
+
+            }
+
+            @media(max-width:576px) {
+                .product-wrapper {
+                    .addbtn {
+                        position: static;
+                        opacity: 1;
+
+                        button {
+                            font-size: 13px;
+                            padding: 8px 11px;
+
+                        }
+
+                    }
+
+                    .icon {
+                        transform: translateX(0px) !important;
+                        opacity: 1 !important;
+                        padding: 0 !important;
+
+                        i {
+                            font-size: 11px !important;
+                        }
+                    }
+
+                    .rating {
+                        gap: 2px !important;
+
+                        i {
+                            font-size: 11px !important;
 
                         }
                     }
+
                 }
             }
         }
@@ -1143,6 +1244,9 @@ header {
     #owl-five {
         .owl-dots {
             display: none;
+        }
+        .owl-stage{
+            transition: 0.5s;
         }
 
         .owl-nav {
@@ -1422,6 +1526,7 @@ footer {
         z-index: 2;
         background-color: transparent;
 
+        
 
         .menubar {
             display: none !important;
@@ -1543,6 +1648,42 @@ footer {
                 width: 340px !important;
                 top: 40px;
                 scale: 0;
+            }
+            .searchwrapper {
+                display: block !important;
+                position: relative;
+    
+                .active {
+                    scale: 1 !important;
+                }
+    
+                .search {
+                    transition: 0.4s;
+                    display: flex;
+                    position: absolute;
+                    top: 43px;
+                    border: 1px solid #eee;
+                    padding: 5px 20px 5px 10px;
+                    margin: 0;
+                    background: #fff;
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    font-weight: 300;
+                    letter-spacing: 0.8px;
+                    color: #999;
+                    align-items: center;
+                    scale: 0;
+    
+                    input {
+                        border: none !important;
+                    }
+    
+                    i {
+                        
+                        color: black;
+                       
+                    }
+                }
             }
         }
 
@@ -1694,6 +1835,13 @@ footer {
     .productsblock {
         .item__row__col {
             padding: 0;
+        }
+
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            border:none;
         }
 
         .my__item {

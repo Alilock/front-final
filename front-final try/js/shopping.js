@@ -102,4 +102,20 @@ function ChangeStyle() {
         errorPage.style.display = 'block'
     }
 }
-
+Sub()
+function Sub(){
+    let subTotal = document.querySelector('.SumTable .sub')
+    let total = SubTotal();
+    subTotal.innerText = '$' + total 
+    function SubTotal() {
+        let basket = JSON.parse(localStorage.getItem('basket'))
+    
+        let subTotal = basket.reduce((t, element) => {
+            return t += element.count * element.price
+        }, 0)
+        let subtotalsection = document.getElementById('total-price')
+        subtotalsection.innerText = '$' + subTotal
+        return subTotal;
+    
+    }
+}

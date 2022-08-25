@@ -45,7 +45,7 @@ document.addEventListener('scroll', function () {
     }
 })
 //#region  basket
-let addBtns = document.querySelectorAll('.productsblock .my__card__title button')
+let addBtns = document.querySelectorAll('.product-wrapper .addbtn')
 function SetId() {
     let id = 0;
     addBtns.forEach((addBtn) => {
@@ -60,10 +60,9 @@ basketSpan.innerText = basket.length;
 addBtns.forEach((addBtn) => {
     addBtn.addEventListener('click', function () {
         let basket = JSON.parse(localStorage.getItem('basket')) || [];
-
-        let productName = addBtn.previousElementSibling.previousElementSibling.firstChild.innerText;
-        let productPrice = addBtn.previousElementSibling.innerText.slice(1);
-        let productImage = addBtn.parentElement.parentElement.firstElementChild.firstElementChild.src;
+        let productName = addBtn.previousElementSibling.firstElementChild.innerText;
+        let productPrice = addBtn.previousElementSibling.lastElementChild.innerText.slice(1);
+        let productImage = addBtn.parentElement.previousElementSibling.firstElementChild.src;
         let productId = addBtn.parentElement.getAttribute('id');
         let product = {
             name: productName,
